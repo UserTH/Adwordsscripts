@@ -1,0 +1,11 @@
+var accountSelector = MccApp.accounts()
+    .withIds(['497-495-1989' ,'176-414-4610' , '957-676-4632']).get(); 
+
+  var accountIterator = accountSelector.get();
+
+  while (accountIterator.hasNext()) {
+    var account = accountIterator.next();
+    MccApp.select(account);
+    	Keygen(); 
+  }
+  
